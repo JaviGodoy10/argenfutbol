@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&family=Source+Sans+Pro&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+    }
+
+body {
+    font-family: 'Cormorant SC', serif;
+    background-color: #004db3;
+}
+.header {
+    background-color: rgb(3, 3, 3);
+    padding: 20;
+    display: flex;
+}
+.logo {
+    width: 5%;
+    display: inline-block;
+    
+}
+.barra {
+    display: inline-block;
+    float: right;
+    width: 100%;
+
+}
+.barranav{
+    float: right ;
+    font-size: 50;
+    text-align: center;
+}
+.barra a{
+    text-decoration: none;
+    color: white;
+}
+.barra li{
+display: inline-block;
+text-align: center;
+}
+.barra a:hover{
+    color: rgb(0, 0, 255);
+}
+.equipos2 {
+width: 100%;
+/* height: 40%; */
+border: 1px solid rgb(12, 12, 12);
+}
+
+h3{margin: 5%;
+    font-size: 30;
+    justify-content: end;
+    margin-bottom: 0%;
+    align-items: center;
+
+}
+.titulo {
+    text-align: center;
+}
+.titulo1{
+    margin: 3%;
+    font-size: 55;
+    align-items: flex-start;
+
+}
+
+.videos{
+    padding-inline: 5%;
+}
+.footer{
+    font-size: 25;
+    text-align: center;
+    background-color: rgb(10, 10, 10);
+    color: rgb(240, 248, 255); 
+    
+}
+.estad {
+    text-align: center;
+}
+.equipos {
+    font-size: 30px;
+    background-color: rgb(0, 0, 255);
+    color: aliceblue;
+}
+
+table {
+    border-collapse: collapse;
+}
+.goleadores {
+    background-color: rgb(0, 0, 255);
+    color: rgb(238, 242, 247);
+    border: 1px solid rgb(0, 0, 0);
+}
+.rossi {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color:rgb(245, 246, 247)
+    
+}
+.falcioni{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: rgb(239, 244, 248);
+}
+
+
+th , td{
+    color: aliceblue;
+    font-size: 25px;
+    border: 2px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+
+}
+th {
+    background-color: blue;
+    color: aliceblue;
+}
+
+
+.main-fixture {
+    font-size: 30;
+    color: aliceblue;
+}
+
+.form {
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    
+
+}
+.sub {
+    text-align: center;
+}
+
+.contenedor-index {
+display: grid;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows: auto 1fr auto;
+min-height: 100vh;
+grid-template-areas: 
+"header header header"
+"main main main"
+"footer footer footer" ;
+}
+
+header {
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.main-fixture {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto auto auto auto;
+grid-template-areas: 
+"agenda agenda"
+"fecha fecha"
+"jornada1 jornada2"
+"jornada3 .";
+}
+
+.agenda {
+    grid-area: agenda;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.fecha{
+    grid-area: fecha;
+    display: flex;
+    justify-content: center;
+}
+.jornada1 {
+    grid-area: jornada1;
+}
+.jornada2 {
+    grid-area: jornada2
+}
+.jornada3 {
+    grid-area: jornada3;
+}
+.noticias{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15% 75% 10%;
+    grid-template-areas: 
+    "header "
+    "main"
+    "footer"
+}
+header {
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+
+.main-noticias {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: repeat(2, 50%);
+    grid-row-gap: 4rem;
+    grid-template-areas: 
+    "rossi rossiph"
+    "falcioni falcioniph"
+    }
+
+
+
+.rossi {
+    grid-area: rossi;
+}
+.rossiph {
+    grid-area: rossiph;
+}
+.falcioni {
+    grid-area: falcioni;
+}
+.falcioniph {
+    grid-area: falcioniph;
+}
+
+.contenedor-estad{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"  ;
+}
+.tablas{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+    "estad estad"
+    "tabla1 tabla2"
+}
+
+.estad{
+    grid-area: estad;
+}
+
+.tabla1{
+    grid-area: tabla1;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.tabla2{
+    grid-area: tabla2;
+    display: flex;
+    align-content: center;
+    padding: 1rem;
+}
+
+@media all and (max-width: 440px) {
+    .barra{
+        display: none;
+    }
+    .titulo1{
+        font-size: 25;
+}
+    .subtitulo {
+        font-size: 18;
+        
+    }
+    .videos iframe {
+        width: 100%;
+    }
+    .main-fixture {
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+        "agenda"
+        "fecha"
+        "viernes"
+        "sabado"
+        "domingo"
+        "lunes";
+        }
+        
+    .main-noticias {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+        grid-row-gap: 4rem;
+        grid-template-areas: 
+        "rossiph" 
+        "rossi"
+        "falcioniph" 
+        "falcioni"
+        }
+        .rossi {
+            flex-wrap: wrap;
+            margin-top: 0rem;
+            margin-left: 0rem;
+            margin-right: 0rem;
+            
+            
+        }
+        .rossiph {
+            width: 80%;
+        }
+        .tablas{
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto auto;
+            grid-template-areas:  
+            "estad"
+            "tabla1" 
+            "tabla2"
+        }
+        .tabla1 .equipos{
+            font-size: 10px;
+        }
+        
