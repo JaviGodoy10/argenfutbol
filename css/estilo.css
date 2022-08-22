@@ -12,7 +12,8 @@
 
 body {
     font-family: 'Cormorant SC', serif;
-    background-color: #004db3;
+    /* background-color: #004db3; */
+    background-image: linear-gradient(#004db3, #4d76ac );
 }
 .header {
     background-color: rgb(3, 3, 3);
@@ -22,8 +23,26 @@ body {
 .logo {
     width: 5%;
     display: inline-block;
-    
+    animation-name: pelota;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+
 }
+
+@keyframes pelota{
+
+0% {
+    transform: rotate(none);
+}
+
+100% {
+    transform: rotate(360deg);
+
+}
+}
+
+
 .barra {
     display: inline-block;
     float: right;
@@ -105,6 +124,11 @@ table {
     color:rgb(245, 246, 247)
     
 }
+.rossiph:hover {
+    transform:scale(0.9,0.9);
+    transition: 2s;
+    filter: grayscale(1);
+}
 .falcioni{
     display: flex;
     flex-wrap: nowrap;
@@ -112,6 +136,11 @@ table {
     margin-left: 2rem;
     margin-right: 2rem;
     color: rgb(239, 244, 248);
+}
+.falcioniph:hover {
+    transform:scale(0.9,0.9);
+    transition: 2s;
+    filter: grayscale(1);
 }
 
 
@@ -345,4 +374,3 @@ footer {
         .tabla1 .equipos{
             font-size: 10px;
         }
-        
