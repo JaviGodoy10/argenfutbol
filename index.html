@@ -1,51 +1,107 @@
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilo.css">
     <title>ArgenFutbol</title>
 </head>
+
 <body class="contenedor-index">
     <header class="header">
-        
-        <img src="./img/26bd.jpg" alt="logo de la web" class="logo" >
+
+        <img src="./img/26bd.jpg" alt="logo de la web" class="logo">
         <nav class="barra">
             <ul class="barranav">
-            <li><a class="inicio" href="./index.html">Inicio</a></li>
-            <li><a class= "fixture" href="./pages/fixture.html">Fixture</a></li>
-            <li><a class= "noticias" href="./pages/noticias.html">Noticias</a></li>
-            <li><a class= "estadisticas" href="./pages/estadisticas.html">Estadisticas</a></li>
-            <li><a class= "contacto" href="./pages/contacto.html">Contacto</a></li>
+                <li><a class="inicio" href="./index.html">Inicio</a></li>
+                <li><a class="noticias" href="./pages/noticias.html">Noticias</a></li>
+                <li><a class="fixture" href="./pages/fixture.html">Fixture</a></li>
+                <li><a class="estadisticas" href="./pages/estadisticas.html">Estadisticas</a></li>
+                <li><a class="contacto" href="./pages/contacto.html">Contacto</a></li>
             </ul>
-            
+
         </nav>
     </header>
-    
-        <main class="equipos1">
-            <!-- LA IDEA ES CREAR UN CARRUSEL PERO AUN NO SE COMO HACERLO!!! -->
-            <!-- <img slide=""src="https://media.tycsports.com/files/2022/05/09/426009/escudos-clubes-liga-profesional_862x485_wmk.webp" alt="escudos-clubes-liga-profesional_862x485_wmk"> -->
-            <img class="equipos2" src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-02/LPF_Ok.jpg?itok=7m7J4zP8">
-            <!-- <img src="https://e00-ar-marca.uecdn.es/claro/assets/multimedia/imagenes/2022/04/15/16500290462018.jpg" alt="pelota.oficial"> -->
 
-            <div class="titulo">
-                <h1 class="titulo1">Bienvenidos a la información</h1>
-                <h2 class="subtitulo">Acá vas a encontrar al instante las noticias mas relevantes del futbol argentino. Resultados, fixtures, posiciones, transferencias, estadísticas y toda la info que necesitas para estar al día con el club de tus amores. 
-                </h2>
-                <h3>ALGO DE LOS QUE NOS DEJO LA ULTIMA FECHA</h3>
+    <main class="equipos1">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/LPF_Ok.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/jugadores.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/pelota.jpg" class="d-block w-100" alt="...">
+                </div>
             </div>
-            <section class="videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/gIVKjeRooec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/7jWL742trr0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/PMqAv7EgCTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="titulo">
+            <h1 class="titulo1">Bienvenidos a la información</h1>
+            <h2 class="subtitulo">Acá vas a encontrar al instante las noticias mas relevantes del futbol argentino.
+                Resultados, fixtures, posiciones, transferencias, estadísticas y toda la info que necesitas para estar
+                al día con el club de tus amores.
+            </h2>
+            <h3>ALGO DE LOS QUE NOS DEJO LA ULTIMA FECHA</h3>
+        </div>
+<section class="container-fluid">
+        
+            <div class="row">
+                <div class="col-12 col-md-4" >
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gIVKjeRooec"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7jWL742trr0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-12 col-md-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PMqAv7EgCTE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             
-            </section>
-            
-        </main> <br> 
-        <br>
-    
+        </div>
+    </section>
+
+
+
+
+        <!-- <section class="videos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gIVKjeRooec"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7jWL742trr0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PMqAv7EgCTE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </section> -->
+
+    </main> <br>
+    <br>
+
     <footer class="footer">
         <p> &#169 Javier Godoy 2022</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
