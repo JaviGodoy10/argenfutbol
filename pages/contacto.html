@@ -27,17 +27,74 @@
         <h1 class="sub">
             SUSCRIBITE Y TE NOTIFICAMOS AL INSTANTE LO QUE SUCEDE EN TU CLUB
         </h1>
-        <div class="form">
-            <form>
-                <input type="text" placeholder="Escribe tu nombre"><br>
-                <input type="password" placeholder="Contraseña"><br>
-                <input type="text" placeholder="TU CLUB"><br>
-                <input type="date" name="" id="">
-                <br>
-                <input type="email" placeholder="email"> <br>
-                <input type="button" value="Enviar">
-            </form>
-        </div>
+        <form class="row g-3 needs-validation justify-content-md-center" novalidate>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationCustom01" value="" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationCustom02" value="" required>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Nombre de usuario</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" required>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                >
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">Provincia</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Selecciona</option>
+                    <option>Cordoba</option>
+                    <option>CABA</option>
+                    <option>Bueos Aires</option>
+                    <option>Santa Fe</option>
+                    <option>Mendoza</option>
+                    <option>San Luis</option>
+                    <option>Entre Rios</option>
+                    <option>Santiago del Estero</option>
+                    <option>La Pampa</option>
+                    <option>Tucuman</option>
+                    <option>Salta</option>
+                    <option>Jujuy</option>
+                    <option>Chaco</option>
+                    <option>Misiones</option>
+                    <option>Catamarca</option>
+                    <option>La Rioja</option>
+                    <option>Neuquen</option>
+                    <option>Chubut</option>
+                    <option>Santa Cruz</option>
+                    <option>Corrientes</option>
+                    <option>Formosa</option>
+                    <option>Tierra del Fuego</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Cod Postal</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Acepto termino y conciciones
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Suscribirse</button>
+            </div>
+        </form>
+
     </main>
     <footer class="footer">
         <p> &#169 Javier Godoy 2022</p>
