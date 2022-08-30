@@ -226,14 +226,7 @@ footer {
 
 .main-fixture {
     padding: 5;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-        "agenda agenda"
-        "fecha fecha"
-        "jornada1 jornada2"
-        "jornada3 ."; */
+    
 }
 
 .agenda {
@@ -249,27 +242,7 @@ footer {
     justify-content: center;
 }
 
-/* .jornada1 {
-    grid-area: jornada1;
-}
 
-.jornada2 {
-    grid-area: jornada2
-}
-
-.jornada3 {
-    grid-area: jornada3; */
-}
-
-/* .noticias {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 15% 75% 10%;
-    grid-template-areas:
-        "header "
-        "main"
-        "footer"
-} */
 
 header {
     grid-area: header;
@@ -282,18 +255,6 @@ main {
 footer {
     grid-area: footer;
 }
-
-
-
-/* .main-noticias {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: repeat(2, 50%);
-    grid-row-gap: 4rem;
-    grid-template-areas:
-        "rossi rossiph"
-        "falcioni falcioniph"
-} */
 
 
 
@@ -313,24 +274,6 @@ footer {
     grid-area: falcioniph;
 }
 
-/* .contenedor-estad {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-} */
-
-/* .tablas {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 90%;
-    grid-template-areas:
-        "estad estad"
-        "tabla1 tabla2"
-} */
 
 .estad {
     grid-area: estad;
@@ -368,28 +311,6 @@ footer {
         width: 100%;
     }
 
-    /* .main-fixture {
-        padding: 1rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto;
-        grid-template-areas:
-            "agenda"
-            "fecha"
-            "viernes"
-            "sabado"
-            "domingo"
-            "lunes";
-    } */
-
-
-    /* .tablas {
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto;
-        grid-template-areas:
-            "estad"
-            "tabla1"
-            "tabla2"
-    } */
 
     .tabla1 .equipos {
         font-size: 10px;
